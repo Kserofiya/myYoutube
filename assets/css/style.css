@@ -9,10 +9,16 @@ body {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding: 20px 70px 20px 32px;
     margin-bottom: 30px;
+    z-index: 99;
 }
 
 .menu-button {
@@ -105,6 +111,11 @@ body {
 }
 
 .sidebar {
+    position: fixed;
+    left: 0;
+    top: 114px;
+    height: calc(100% - 114px);
+    overflow-y: scroll;
     padding-left: 32px;
 }
 
@@ -153,4 +164,119 @@ body {
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
+}
+
+.content {
+    padding-left: 14%;
+    margin-top: 85px;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.channel-title {
+    display: flex;
+    align-items: center;
+    color: #19202C;
+    text-decoration: none;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+
+.channel-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.channel-text {
+    margin-left: 20px;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 9%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+}
+
+.channel {
+    position: relative;
+    margin-bottom: 49px;
+}
+
+.channel-button {
+    cursor: pointer;
+}
+
+.video-card {
+    width: 250px;
+}
+
+.video-thumb {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.video-duration {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: normal;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 3px 9px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.video-counter {
+    display: flex;
+}
+
+.video-views {
+    margin-right: 5px;
+}
+
+.video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
 }
