@@ -116,8 +116,11 @@ body {
     left: 0;
     top: 114px;
     height: calc(100% - 114px);
-    overflow-y: scroll;
     padding-left: 32px;
+}
+
+.sidebar:hover {
+    overflow-y: scroll;
 }
 
 .nav-link {
@@ -307,14 +310,10 @@ body {
     margin-left: 5px;
 }
 
-.wrapper-recom {
-    padding-left: 20%;
-}
-
 .subscribe {
     width: 154px;
     height: 40px;
-    margin-left: 377px;
+    margin-left: 177px;
     color: white;
     background-color: #FF0000;
     border: none;

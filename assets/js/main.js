@@ -13,7 +13,7 @@ const swiper = new Swiper('.channel-slider', {
   const swiperRecommended = new Swiper('.recommended-slider', {
     // Optional parameters
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 3,
   
     // Navigation arrows
     navigation: {
