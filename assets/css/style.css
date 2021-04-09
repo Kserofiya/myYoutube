@@ -112,6 +112,7 @@ body {
 
 .sidebar {
     position: fixed;
+    width: 20%;
     left: 0;
     top: 114px;
     height: calc(100% - 114px);
@@ -167,7 +168,7 @@ body {
 }
 
 .content {
-    padding-left: 14%;
+    padding-left: 21%;
     margin-top: 85px;
     padding-top: 30px;
     width: 100%;
@@ -195,6 +196,13 @@ body {
     margin-left: 20px;
 }
 
+.channel-subtext {
+    margin-left: 19px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+
 .slider-buttons {
     position: absolute;
     right: 9%;
@@ -218,9 +226,21 @@ body {
     width: 250px;
 }
 
+.recom-card {
+    width: 540px;
+}
+
 .video-thumb {
     width: 250px;
     height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.recom-thumb {
+    width: 540px;
+    height: 250px;
     overflow: hidden;
     border-radius: 14px;
     position: relative;
@@ -242,6 +262,12 @@ body {
 .thumbnail {
     width: 250px;
     height: 150px;
+    object-fit: cover;
+}
+
+.recomThumbnail {
+    width: 540px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -279,4 +305,21 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin-left: 5px;
+}
+
+.wrapper-recom {
+    padding-left: 20%;
+}
+
+.subscribe {
+    width: 154px;
+    height: 40px;
+    margin-left: 377px;
+    color: white;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
 }
